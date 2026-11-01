@@ -1,0 +1,12 @@
+# Explicit path budget: /dist/** is the required runtime export, included within
+# the overall 8,388,608-byte submission limit, even when a global ignore exists.
+!/dist/
+!/dist/**
+# Explicit path budget: generated dependencies at any depth, 0 submitted bytes.
+**/node_modules/
+# Explicit path budget: temporary browser evidence and test scaffolding, 0 submitted bytes.
+/test/scratch/
+# Explicit path budget: generated tool caches at any depth, 0 submitted bytes.
+**/.vite/
+**/.cache/
+**/*.tsbuildinfo
